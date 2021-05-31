@@ -12,19 +12,18 @@ import ProgresLine from '../../images/RoadProgresLine.svg'
 const RoadMap = (props) => {
 
   let task = [
-    {id: 5,name:'Acquaintance with the project', total: 50, done: 48, procent: 98, img: ''},
-    {id: 4,name:'Trainings', total: 3, done: 3, procent: '', img: TaskDone},
+    {id: 4,name:'Acquaintance with the project', total: 50, done: 48, procent: 98, img: ''},
+    {id: 3,name:'Trainings', total: 3, done: 3, procent: '', img: TaskDone},
     {id: 2,name:'Documentation', total: 5, done: 5, procent: '', img: TaskDone},
-    {id: 3,name:'Acquaintance', total: 7, done: 7, procent: '', img: TaskDone},
+    {id: 1,name:'Acquaintance and document signing', total: 7, done: 7, procent: '', img: TaskDone},
 
     // {id: 3,name:'Documentation', total: 48, done: 50, procent: 98, img: ''},
     // {id: 4,name:'Acquaintance and documents signing', total: 50, done: 50, procent: '', img: TaskDone},
   ]
 
   let nextTask = [
-    {id: 4,name:'Trainings', total: 3, done: 3, procent: '', img: TaskDone},
+    {id: 1,name:'Acquaintance and document signing', total: 7, done: 7, procent: '', img: TaskDone},
     {id: 2,name:'Documentation', total: 5, done: 5, procent: '', img: TaskDone},
-    {id: 3,name:'Acquaintance', total: 7, done: 7, procent: '', img: TaskDone},
   ]
 
   let buddyTasks = [
