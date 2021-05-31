@@ -19,6 +19,11 @@ const Onboarding = (props) => {
       setProgresBar(false);
       setProcent(100);
     }
+  } 
+ 
+  function changeProgres(params) {
+    setProgresBar(false)
+    setProcent(100);
   }
 
   return (
@@ -34,7 +39,7 @@ const Onboarding = (props) => {
          hideUser={props.hideUser}
          active={props.active}
         />
-        { props.boardStatus ? <TaskBoard hideUsers={()=>{props.hideUsers()}} hideUser={props.hideUser} change={()=>{props.change()}}  buddy={props.buddy} changeProgresBar={(name)=>{changeProgresBar(name)}} setCareer={()=>{props.setCareer()}} />  :  <RoadMap hideUserTask={props.hideUserTask} selectuser={()=>{props.change()}} buddy={props.buddy}/> }
+        { props.boardStatus ? <TaskBoard changeProgres={()=>{changeProgres()}} hideUsers={()=>{props.hideUsers()}} hideUser={props.hideUser} change={()=>{props.change()}}  buddy={props.buddy} changeProgresBar={(name)=>{changeProgresBar(name)}} setCareer={()=>{props.setCareer()}} />  :  <RoadMap hideUserTask={props.hideUserTask} selectuser={()=>{props.change()}} buddy={props.buddy}/> }
       </main>
       <ProgressNavigation buddy={props.buddy} procent={procent} />
     </div>

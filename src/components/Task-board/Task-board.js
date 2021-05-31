@@ -154,7 +154,9 @@ const TaskBoard = (props) => {
         tasks[1].tasks.length === 0 &&
         tasks[2].tasks.length === 0
       ) {
-      setTimeout(() => {
+      
+        setTimeout(() => {
+        props.changeProgres();
         setCongrats(true)
       }, 100);
       }
