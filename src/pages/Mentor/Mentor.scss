@@ -1,0 +1,6 @@
+@import './../../colors-system.scss';
+
+.mentor {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}

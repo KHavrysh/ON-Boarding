@@ -1,0 +1,46 @@
+@import './../../../colors-system.scss';
+
+.pagination {
+  display: grid;
+  justify-content: end;
+  align-self: end;
+  padding: 0 30px;
+  background: #F9FAFF;
+  z-index: 1;
+
+  &__btn-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    align-items: center;
+  }
+
+  &__arrow-wrap {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__arrow-right {
+    transform: rotate(180deg);
+    margin-left: 16px;
+  }
+
+  &__arrow-left {
+    margin-right: 16px;
+  }
+
+  &__btn {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .active {
+    background: $primary-white;
+    box-shadow: 0px 12px 15px rgba(228, 229, 232, 0.5);
+  }
+}

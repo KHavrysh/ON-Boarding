@@ -1,0 +1,45 @@
+@import './../../colors-system.scss';
+
+.tracker {
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 6px;
+  justify-items: center ;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: $primary-white;
+  box-shadow: 0px 12px 15px rgba(228, 229, 232, 0.5);
+
+  @media (max-width: 1500px) {
+    padding: 24px 24px 16px;
+  }
+  
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    color: $primary-medium;
+  }
+
+  &__update {
+    font-size: 16px;
+    color: $primary-high;
+  }
+
+  &__timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: $primary-high;
+
+    @media (max-width: 1500px) {
+      font-size: 30px;
+    }
+  }
+
+  &__play {
+    cursor: pointer;
+
+    @media (max-width: 1500px) {
+      height: 45px;
+    }
+  }
+}

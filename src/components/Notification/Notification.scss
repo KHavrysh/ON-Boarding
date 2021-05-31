@@ -1,0 +1,32 @@
+@import '../../colors-system.scss';
+
+.notification, .notification__boddy {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+   
+  }
+  &__avatar {
+    @media (max-width: 1500px) {
+      width: 45px;
+    }
+  }
+}
+
+.notification {
+  gap: 32px;
+  
+  &__boddy {
+    gap: 8px;
+
+    span {
+      font-size: 18px;
+      line-height: 27px;
+      color: $primary-medium;
+    }
+  }
+
+}

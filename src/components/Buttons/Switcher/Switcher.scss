@@ -1,0 +1,67 @@
+@import './../../../colors-system.scss';
+
+.switcher {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  gap: 16px;
+
+  &__btn {
+    display: grid;
+    align-items: center;
+    width: 84px;
+    height: 44px;
+    padding: 5px;
+    background-color: $primary;
+    box-shadow: 0px 5px 8px rgba(205, 205, 205, 0.8);
+    border-radius: 27px;
+    font-size: 18px;
+    cursor: pointer;
+
+    @media (max-width: 1350px) {
+      width: 64px;
+      height: 32px;
+    }
+  }
+
+  &__dot {
+    width: 32px;
+    height: 34px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+
+    @media (max-width: 1350px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+}
+
+.active .switcher__dot-active {
+  transform: translateX(42px);
+
+  @media (max-width: 1350px) {
+    transform: translateX(32px);;
+  }
+}
+
+.switcher__roadmap {
+  color: $primary;
+  font-weight: 600;
+}
+
+.active .switcher__roadmap {
+  color: $primary-medium;
+}
+
+.switcher__board {
+  color: $primary-medium;
+  font-weight: 600;
+}
+
+.active .switcher__board {
+  color: $primary;
+}

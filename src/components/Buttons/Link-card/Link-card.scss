@@ -1,0 +1,72 @@
+@import '../../../colors-system.scss';
+
+.link-card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, max-content);
+  gap: 16px;
+  padding: 16px 24px;
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $primary-medium;
+  transition: 0.5s;
+  overflow: hidden;
+  @media (max-width: 1500px) {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .img {
+    width: 20px;
+    height: 20px;
+    object-fit: none;
+  }
+
+  span {
+    animation: showText 0.5s forwards 0.1s;
+    opacity: 0;
+  }
+
+  @keyframes showText {
+    0%{
+
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+
+}
+
+.link-card:hover {
+  background-color: $primary;
+
+  svg path {
+    fill: $primary-white;
+  }
+
+   color: $primary-white;
+}
+
+.is-active {
+  color: white;
+  background-color: $primary;
+  
+  svg path {
+    fill: white;
+  }
+}
+
+.nav-small .is-small {
+    grid-template-columns: 1fr;
+    
+    span {
+      display: none;
+
+    }
+}

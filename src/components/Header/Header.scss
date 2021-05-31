@@ -1,0 +1,20 @@
+@import '../../colors-system.scss';
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-auto-rows: max-content;
+  justify-content: space-between;
+
+  &__user {
+    font-family: 'Poppins', 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: $primary-medium;
+    @media (max-width: 1500px) {
+      font-size: 30px;
+    }
+  }
+}

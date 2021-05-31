@@ -1,0 +1,91 @@
+@import './../../colors-system.scss';
+
+.mentee-card-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 12px;
+
+  @media (max-width: 1500px) {
+    grid-template-columns: repeat(3, 186px);
+  }
+}
+.mentee-card {
+  display: grid;
+  justify-items: center;
+  grid-auto-rows: max-content;
+  gap: 8px;
+  width: max-content;
+  padding: 24px 32px;
+  color: $primary-medium;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 15px rgba(228, 229, 232, 0.5);
+  border-radius: 6px;
+  width: 100%;
+
+  @media (max-width: 1500px) {
+
+    
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    color: $primary;
+    font-size: 14px;
+    border-radius: 100px;
+    border-color: transparent;
+    background-color: transparent;
+
+
+    @media (max-width: 1500px) {
+      display: none;
+    }
+
+    span {
+      position: absolute;
+      justify-self: center;
+      align-self: center;
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+      object-position: right;
+      object-fit: contain;
+      border-radius: 100px;
+      box-shadow: (0px 5px 8px rgba(205, 205, 205, 0.8));
+
+      
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width:1500px) {
+      font-size: 14px;
+    }
+  }
+
+  &__prof {
+    font-size: 14px;
+  }
+
+  &__tasks {
+    font-size: 12px;
+  }
+
+  >img {
+    @media (max-width: 1500px) {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}

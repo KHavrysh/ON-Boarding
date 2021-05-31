@@ -1,0 +1,30 @@
+@import '../../../colors-system.scss';
+
+.column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  justify-content: center;
+  gap: 16px;
+  padding: 25px 15px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: #F4F5F7;
+  height: 100%;
+    
+  &__title {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: $primary-medium;
+  }
+}
+
+.column::-webkit-scrollbar {
+    width: 5px;
+}
+
+.column::-webkit-scrollbar-thumb {
+  background-color: rgb(82, 95, 94);
+  height: 10px;
+}

@@ -1,0 +1,14 @@
+@import '../../../../colors-system.scss';
+
+.date {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 18px;
+  font-size: 14px;
+  color: $primary-medium;
+
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

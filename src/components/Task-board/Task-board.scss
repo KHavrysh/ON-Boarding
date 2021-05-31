@@ -1,0 +1,11 @@
+.task-board {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: space-between;
+  gap: 8px;
+  max-height: 683px;
+
+  @media (max-width: 1400px) {
+    max-height: 380px;
+  }
+}

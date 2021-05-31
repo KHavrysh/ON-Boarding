@@ -1,0 +1,11 @@
+.search {
+  display: grid;
+  grid-template-columns: 448px 186px;
+  justify-content: space-between;
+  &__field {
+    background-color: #c5bbbb;
+    border: none;
+    padding: 15px 10px 15px 67px;
+    outline: none;
+  }
+}

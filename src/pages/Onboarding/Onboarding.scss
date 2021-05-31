@@ -1,0 +1,24 @@
+.on-board {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  
+  &__main {
+    display: grid;
+    grid-template-rows:max-content max-content 1fr;
+    gap: 32px;
+    padding: 70px 32px;
+    height: 100vh;
+
+    @media (max-width: 1500px) {
+      padding: 50px 18px 24px;
+    }
+  }
+
+  &__board {
+    grid-template-rows: max-content max-content 1fr;
+    padding: 70px 32px 24px;
+    @media (max-width: 1500px) {
+      padding: 50px 18px 24px;
+    }
+  }
+}

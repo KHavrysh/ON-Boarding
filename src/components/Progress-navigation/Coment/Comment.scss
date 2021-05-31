@@ -1,0 +1,47 @@
+@import './../../../colors-system.scss';
+
+.comment {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #F9FAFF;
+
+  &__img {
+    width: 32px;
+  }
+
+  &__user {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 8px;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    span {
+      font-size: 14px;
+      color: $primary-medium;
+    }
+
+    span:nth-child(1) {
+      font-weight: bold;
+    }
+    span:nth-child(2) {
+      font-weight: 500;
+    }
+    
+  }
+
+  &__messge-wrap {
+    display: grid;
+  }
+
+}
+
+

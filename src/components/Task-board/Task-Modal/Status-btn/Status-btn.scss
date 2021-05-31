@@ -1,0 +1,47 @@
+@import './../../../../colors-system.scss';
+.status-btn-wrap {
+  z-index: 1;
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 12px;
+  height: 58px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.active-wrap {
+  height: auto;
+}
+
+.status-btn {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 10px;
+  width: 191px;
+  height: 56px;
+  padding: 16px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+}
+
+.modal__status {
+  display: grid;
+}
+
+.progres {
+  background-color: $primary;
+}
+
+.review {
+  background-color: #FD7623;
+}
+
+.done {
+  background-color: #12962F;
+}
+
+.todone {
+  background-color: #939699;
+}

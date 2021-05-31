@@ -1,0 +1,11 @@
+
+@import './../../colors-system.scss';
+
+.tasks {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: $primary-white;
+  box-shadow: 0px 12px 15px rgba(228, 229, 232, 0.5);
+  overflow: scroll;
+} 

@@ -1,0 +1,59 @@
+@import './../../../colors-system.scss';
+
+.progres-btn {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-radius: 10px;
+  background-color: #F9FAFF;
+  gap: 8px;
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-content: center;
+    gap: 8px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    color: $primary-medium;
+    gap: 8px;
+  }
+
+  &__img {
+    width: 33px;
+    height: 33px;
+    background-color: peru;
+  }
+
+  &__procent-wrap {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+    gap: 8px;
+  }
+
+  &__progres {
+    height: 14px;
+    width: 200px;
+    border-radius: 12px;
+    background-color: #C4C4C4;
+    overflow: hidden;
+  }
+
+  &__progres-line {
+    width: 90%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #1E71FF;
+  }
+
+  &__progres-line-done {
+    background-color: #12962F; 
+    width: 100%;
+  }
+
+}

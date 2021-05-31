@@ -1,0 +1,42 @@
+@import './../../colors-system.scss';
+.doc {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: max-content;
+  align-content: end;
+  gap: 24px;
+
+  button {
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: Poppins, sans-serif;
+    padding: 24px 32px;
+    border: none;
+    border-radius: 40px;
+    background-color: $primary-white;
+    outline: none;
+    box-shadow: 0px 12px 15px rgba(228, 229, 232, 0.5);
+    cursor: pointer;
+
+    @media (max-width: 1500px) {
+      padding: 8px 24px;
+    }
+
+    &:nth-child(-n+1) {
+      @media (max-width: 1500px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(-n+3) {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+}
+
+

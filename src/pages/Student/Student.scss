@@ -1,0 +1,5 @@
+.student {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    overflow-y: hidden;
+}

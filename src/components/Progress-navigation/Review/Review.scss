@@ -1,0 +1,36 @@
+@import './../../../colors-system.scss';
+
+.on-review {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+  padding: 24px 16px;
+  border-radius: 10px;
+  background: #F9FAFF;
+
+  >img {
+    width: 32px;
+  }
+
+  &__wrap {
+    img {
+      margin-right: 8px;
+      transform: translateY(4px);
+    }
+  }
+
+  &__task {
+    font-weight: bold;
+    font-size: 14px;
+    color: $primary-medium;
+  }
+
+  &:nth-child(3) {
+    @media (max-width: 1500px) {
+      display: none;
+    }
+  }
+
+}
+
+

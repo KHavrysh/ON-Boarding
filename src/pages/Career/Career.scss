@@ -1,0 +1,75 @@
+@import './../../colors-system.scss';
+
+.career {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 16px;
+  padding: 70px 32px;
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+    height: 100%;
+    font-weight: 500;
+    font-size: 36px;
+    color: $primary-medium;
+
+  div {
+    padding: 32px;
+    display: grid;
+  }
+
+  div:nth-child(1) {
+    background: url('./../../images/career/1.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    span {
+      align-self: end;
+    }
+  }
+
+  div:nth-child(2) {
+    background: url('./../../images/career/2.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+      justify-self: end;
+    }
+  }
+
+  div:nth-child(3) {
+    background: url('./../../images/career/3.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+      justify-self: end;
+      align-self: center;
+    }
+  }
+
+  div:nth-child(4) {
+    background: url('./../../images/career/4.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 2/4;
+    grid-column: 2/2;
+  }
+
+  div:nth-child(5) {
+    background: url('./../../images/career/5.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  }
+}
